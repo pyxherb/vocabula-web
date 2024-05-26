@@ -1,0 +1,39 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	height: 48px;
+	align-items: center;
+	padding: 16px;
+	background-color: lightgray;
+	box-shadow: 0px 1px 10px black;
+}
+
+#logo {
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.searchBox {
+	border-radius: 15px;
+	border: 2px solid gray;
+	height: 20px;
+	font-size: 16px;
+	outline: none;
+	transition-duration: 0.25s;
+}
+
+.searchBox::placeholder {
+	color: gray;
+	transition-duration: 0.25s;
+}
+
+.searchBox:focus {
+	border: 2px solid white;
+	color: black;
+	transition-duration: 0.25s;
+}
+
+.searchBox:focus::placeholder {
+	color: transparent;
+	transition-duration: 0.25s;
+}
